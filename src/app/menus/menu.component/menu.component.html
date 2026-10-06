@@ -1,1 +1,17 @@
-<p>menu.component works!</p>
+<button (click)="userRol = userRol === 'admin' ? 'user' : 'admin'">
+    Cambiar rol a {{ userRol === 'admin' ? 'user' : 'admin' }}
+</button>
+
+<ul>
+    @for (item of itemsMenu; track $index) {
+        @if (item === 'Configuration' && userRol === 'admin') {
+            <li>{{ item }}</li>
+        }
+        @else if (item !== 'Configuration') {
+            <li>{{ item }}</li>
+        }
+    }
+</ul>
+<hr>
+<p >Tu rol actual: {{ userRol }}</p>
+<hr>

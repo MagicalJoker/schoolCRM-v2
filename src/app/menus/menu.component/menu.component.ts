@@ -6,4 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css',
   templateUrl: './menu.component.html',
 })
-export class MenuComponent {}
+export class MenuComponent {
+  userRol = 'user';
+  itemsMenu = [
+    'Home',
+    'About',
+    'Courses',
+    'Asistencia',
+    'Services',
+    'Configuration',
+    'Contact',
+  ]; 
+}

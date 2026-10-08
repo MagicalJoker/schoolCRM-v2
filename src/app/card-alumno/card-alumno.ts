@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './card-alumno.css',
   templateUrl: './card-alumno.html',
 })
-export class CardAlumno {}
+export class CardAlumno {
+  alumno = input<any>();
+}

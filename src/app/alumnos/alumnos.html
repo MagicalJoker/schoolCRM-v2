@@ -1,3 +1,7 @@
-<p>alumnos works!</p>
+<!--<p>alumnos works!</p> -->
+<!--Vamos a recorrer la lista de alumnos usando la directiva @for-->
+@for (alumno of alumnosService.getListaAlumnos(); track $index) {
+    <app-card-alumno></app-card-alumno>
+}
 
 
